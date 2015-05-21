@@ -1,8 +1,3 @@
-=begin
-see https://github.com/caskroom/homebrew-cask/blob/master/Casks/microsoft-office.rb
-adjusted for german locale
-=end
-
 cask :v1 => 'microsoft-office-german' do
   version :latest
   sha256 :no_check
