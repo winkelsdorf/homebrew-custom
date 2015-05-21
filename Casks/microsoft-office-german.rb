@@ -1,5 +1,7 @@
-# see https://github.com/caskroom/homebrew-cask/blob/master/Casks/microsoft-office.rb
-# adjusted for german locale
+=begin
+see https://github.com/caskroom/homebrew-cask/blob/master/Casks/microsoft-office.rb
+adjusted for german locale
+=end
 
 cask :v1 => 'microsoft-office-german' do
   version :latest
@@ -43,10 +45,10 @@ cask :v1 => 'microsoft-office-german' do
                            '~/Library/Preferences/com.microsoft.outlook.databasedaemon.plist',
                            '~/Library/Preferences/com.microsoft.outlook.office_reminders.plist',
                            '~/Library/Preferences/com.microsoft.outlook.officereminders.plist',
-                           '~/Documents/Microsoft User Data/Microsoft',
-                           '~/Documents/Microsoft User Data/Office 2011 Identities',
-                           '~/Documents/Microsoft User Data/Outlook Sound Sets',
-                           '~/Documents/Microsoft User Data/Saved Attachments'
+                           '~/Documents/Microsoft-Benutzerdaten/Microsoft',
+                           '~/Documents/Microsoft-Benutzerdaten/Office 2011 Identities',
+                           '~/Documents/Microsoft-Benutzerdaten/Outlook Sound Sets',
+                           '~/Documents/Microsoft-Benutzerdaten/Saved Attachments'
                           ],
             :rmdir     => [
                            '/Library/Application Support/Microsoft',
