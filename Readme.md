@@ -11,4 +11,5 @@ brew tap winkelsdorf/custom
 ### Installation
 ```code
 brew cask install microsoft-office-german
+brew cask install deploymate
 ```
