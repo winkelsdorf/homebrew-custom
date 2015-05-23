@@ -12,8 +12,9 @@ cask :v1 => 'jdownloader2' do
   homepage 'http://jdownloader.org/download/offline'
   license :gpl
 
-  installer :script => 'JDownloader Installer.app/Contents/MacOS/JavaApplicationStub',
-            :args => [ '-q' ]
+  preflight do
+    system "#{staged_path}/JDownloader Installer.app/Contents/MacOS/JavaApplicationStub", '-q', '-dir', "#{staged_path}", "-Dinstall4j.suppressStdout=true", "-Dinstall4j.debug=false", "2&>1 >/dev/null"
+  end
 
-  uninstall :delete => '/Applications/JDownloader.app'
+  app 'JDownloader.app'
 end
