@@ -12,4 +12,5 @@ brew tap winkelsdorf/custom
 ```code
 brew cask install microsoft-office-german
 brew cask install deploymate
+brew cask install shrinkit
 ```
