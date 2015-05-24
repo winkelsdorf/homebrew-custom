@@ -2,7 +2,7 @@ cask :v1 => 'adobe-design-web-premium-cs6' do
   version :latest
   sha256 :no_check
 
-  url 'http://trials2.adobe.com/AdobeProducts/DSST/CS6/osx10/DesignWebPremium_CS6_LS6.dmg'
+  url 'ftp://ftp.adobe.com/pub/adobe/cs6/downloads/DesignWebPremium_CS6_LS6.dmg'
   name 'Adobe CS6 Design & Web Premium'
   homepage 'http://www.adobe.com/mena_en/products/creativesuite.html'
   license :commercial
