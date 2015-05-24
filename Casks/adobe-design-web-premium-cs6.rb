@@ -7,7 +7,8 @@ cask :v1 => 'adobe-design-web-premium-cs6' do
   homepage 'http://www.adobe.com/mena_en/products/creativesuite.html'
   license :commercial
 
-  installer :script => 'Install.app/Contents/MacOS/Install',
+  installer :signal => [['KILL', 'com.apple.SafariNotificationAgent']],
+            :script => 'Install.app/Contents/MacOS/Install',
             :args   => %w[--mode=silent --deploymentFile=deploy/install-en_US.xml],
             :sudo   => true
 
