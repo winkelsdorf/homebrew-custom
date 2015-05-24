@@ -12,7 +12,8 @@ cask :v1 => 'adobe-design-web-premium-cs6' do
             :args   => %w[--mode=silent --deploymentFile=deploy/install-en_US.xml],
             :sudo   => true
 
-  uninstall :script => 'Adobe AIR Installer.app/Contents/MacOS/Adobe AIR Installer',
+  uninstall :signal => [['KILL', 'com.apple.SafariNotificationAgent']],
+            :script => 'Adobe AIR Installer.app/Contents/MacOS/Adobe AIR Installer',
             :args   => %w[--mode=silent --deploymentFile=deploy/uninstall-en_US.xml],
             :sudo   => true
 
