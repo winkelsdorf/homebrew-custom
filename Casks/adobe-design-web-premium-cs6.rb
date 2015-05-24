@@ -13,9 +13,9 @@ cask :v1 => 'adobe-design-web-premium-cs6' do
             :sudo   => true
 
   uninstall :signal => [['KILL', 'com.apple.SafariNotificationAgent']],
-            :script => 'Adobe AIR Installer.app/Contents/MacOS/Adobe AIR Installer',
+            :script => 'Install.app/Contents/MacOS/Install',
             :args   => %w[--mode=silent --deploymentFile=deploy/uninstall-en_US.xml],
             :sudo   => true
 
-  caveats "Installation or Uninstallation may fail if Browsers, Safari Notification Service or SIMBL Services (e.g. Flashlight) are running or Adobe Creative Cloud or any other Adobe Products are already installed. See Adobe Error Logs if Installation or Uninstallation fails."
+  caveats 'Installation or Uninstallation may fail if Browsers, Safari Notification Service or SIMBL Services (e.g. Flashlight) are running or Adobe Creative Cloud or any other Adobe Products are already installed. See Adobe Error Logs if Installation or Uninstallation fails.'
 end
