@@ -1,8 +1,10 @@
-## Custom homebrew casks
+## Custom Homebrew Casks
 
 See [http://brew.sh/]() and [http://caskroom.io/]() for further information on Homebrew and Cask.
 
-This is my experimental Cask playground. After Issues are fixed or Discussions are finished they will be merged into the official Repos (see *Merged Casks*).
+*This is my experimental Cask playground.*
+
+After Issues are fixed or Discussions are finished they will be merged into the official Repos (see [Merged Casks](https://github.com/winkelsdorf/homebrew-custom#merged-casks)).
 
 ### Tap
 ```code
