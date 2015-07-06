@@ -13,7 +13,7 @@ cask :v1 => 'jdownloader2' do
   license :gpl
 
   preflight do
-    system "#{staged_path}/JDownloader Installer.app/Contents/MacOS/JavaApplicationStub", '-q', '-dir', "#{staged_path}", "-Dinstall4j.suppressStdout=true", "-Dinstall4j.debug=false", "2&>1 >/dev/null"
+    system "#{staged_path}/JDownloader Installer.app/Contents/MacOS/JavaApplicationStub", '-q', '-dir', "#{staged_path}", "-Dinstall4j.suppressStdout=true", "-Dinstall4j.debug=false"
   end
 
   app 'JDownloader.app'
