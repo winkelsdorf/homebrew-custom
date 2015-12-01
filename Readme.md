@@ -13,8 +13,7 @@ brew tap winkelsdorf/custom
 
 ### Installation
 ```code
-brew cask install jdownloader2
-brew cask install pdftk
+brew cask install Name-of-Cask
 ```
 
 ### Merged Casks
