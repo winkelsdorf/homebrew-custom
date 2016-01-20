@@ -57,8 +57,9 @@ brew cask install adobe-production-premium-cs6-it
 brew cask install adobe-production-premium-cs6-ja
 brew cask install adobe-production-premium-cs6
 
-brew cask install deploymate
 brew cask install microsoft-office-de
+brew cask install deploymate
 brew cask install shrinkit
 brew cask install tripmode
+brew cask install instasizer
 ```
